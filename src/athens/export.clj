@@ -42,8 +42,8 @@
 
 (defn convert-todos [text]
   "Converts TODO/DONE state. Athens may allow TODO markers mid sentence.
-  However logseq expect those at the begining of the block. If you have
-  TODO markers mid block with text preceeding it, you may need to manually
+  However logseq expect those at the beginning of the block. If you have
+  TODO markers mid block with text preceding it, you may need to manually
   look for those after the conversion. Logseq also does not use [ ] and [X]
   syntax like other MD-aware tools. The reason, logseq allows  configurable
   TODO flows based on  multiple labels to toggle from. Priorities are not
