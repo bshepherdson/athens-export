@@ -34,8 +34,11 @@ directory tree, suitable for importing into logseq.
 
 There are several known weaknesses of this tool.
 
-- `TODO`/`DONE` in Athens is not converted to logseq's format (either the
-  later/now/done style or todo/done).
+- `TODO`/`DONE` in Athens is rudimentarily converted to logseq's format using
+  TODO and DONE markers. Keep in mind that logseq will only recognize them if
+  they are the begining of a block (Athens allows you to randomly add them
+  anywhere on the block, if you rely on that, you will have to manually fix
+  your files).
 - iframe and YouTube embeds are not converted
   - they are visible (flagged as errors) in logseq, and can be edited to work.
 - code blocks are clumsy in Athens, and show up misformatted in logseq
