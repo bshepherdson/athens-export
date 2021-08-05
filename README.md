@@ -4,10 +4,22 @@ Standalone tool that converts an
 [Athens Research](https://github.com/athensresearch/athens) database into a
 [logseq](https://github.com/logseq/logseq) directory.
 
+
+## Installation
+
+Clone to your root directory
+
+```
+$ git clone https://github.com/shepheb/athens-export.git
+```
 ## Usage
 
-Install the Clojure CLI tool, `clj`.
+Install dependencies
+- [Clojure CLI tool](https://clojure.org/guides/getting_started), `clj`.
 
+
+
+```cd athens-export``` and then, in the same window, run the following code, making sure to enter the path to your Athens DB and target directory. 
 ```
 $ clj -X athens.export/export \
   :athens '"path/to/athens/index.transit"' \
