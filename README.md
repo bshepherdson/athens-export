@@ -6,7 +6,15 @@ Standalone tool that converts an
 
 ## Usage
 
-Install the Clojure CLI tool, `clj`.
+The easiest way is to download a [released JAR], and run it with
+
+```
+$ java -jar athens-export.jar path/to/athens/index.transit logseq/parent/dir
+```
+
+To run from source: install the Clojure CLI tool,
+[`clj`](https://clojure.org/guides/getting_started#_clojure_installer_and_cli_tools),
+clone this repo and `cd` into it. Then:
 
 ```
 $ clj -X athens.export/export \
