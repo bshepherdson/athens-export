@@ -6,7 +6,8 @@ Standalone tool that converts an
 
 ## Usage
 
-The easiest way is to download a [released JAR], and run it with
+The easiest way is to download a [released
+JAR](https://github.com/shepheb/athens-export/releases), and run it with
 
 ```
 $ java -jar athens-export.jar path/to/athens/index.transit logseq/parent/dir
