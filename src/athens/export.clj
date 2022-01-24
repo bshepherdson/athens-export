@@ -9,7 +9,8 @@
     [datascript.transit :as dt])
   (:import
     [java.io FileInputStream]
-    [java.util UUID]))
+    [java.util UUID])
+  (:gen-class))
 
 (defn rewrite-block-refs [block-refs text]
   (and text
@@ -162,4 +163,7 @@
 ; clj -X athens.export/export :athens '"path/to/athens/index.transit"' \
 ;   :logseq '"path/to/empty/dir"'
 ; (yes with the weird double quoting; we want to pass literal "s to Clojure)
+
+(defn -main [athens-db logseq-dir & _]
+  (export {:athens athens-db :logseq logseq-dir}))
 
