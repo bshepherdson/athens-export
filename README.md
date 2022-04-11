@@ -10,6 +10,7 @@ The easiest way is to download a [released
 JAR](https://github.com/shepheb/athens-export/releases), and run it with
 
 ```
+$ wget https://github.com/bshepherdson/athens-export/releases/latest/download/athens-export.jar
 $ java -jar athens-export.jar path/to/athens/index.transit logseq/parent/dir
 ```
 
