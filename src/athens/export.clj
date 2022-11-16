@@ -116,7 +116,7 @@
     {:db/id eid
      :block/string text
      :block/ref block-ref
-     :export/uuid (.toString (UUID/randomUUID))}))
+     :export/uuid (.toString (UUID/nameUUIDFromBytes (.getBytes block-ref)))}))
 
 (defn export
   "Given the in-memory database and a target directory, output everything there.
